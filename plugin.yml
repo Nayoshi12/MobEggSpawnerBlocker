@@ -2,6 +2,7 @@ main: me.sothatsit.mobeggspawnerblocker.MobEggSpawnerBlocker
 author: sothatsit
 name: MobEggSpawnerBlocker
 version: 1
+api-version: 1.13
 commands:
    mobeggspawnerblocker:
       description: 'reload MobEggSpawnerBlocker config'
