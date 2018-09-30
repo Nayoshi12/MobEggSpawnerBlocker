@@ -1,7 +1,7 @@
 main: me.sothatsit.mobeggspawnerblocker.MobEggSpawnerBlocker
-author: sothatsit
+authors: [sothatsit,nayoshi12]
 name: MobEggSpawnerBlocker
-version: 1
+version: 1.2.1
 api-version: 1.13
 commands:
    mobeggspawnerblocker:

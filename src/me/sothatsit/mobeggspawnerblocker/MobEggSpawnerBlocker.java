@@ -1,6 +1,8 @@
 package me.sothatsit.mobeggspawnerblocker;
 
 
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.CreatureSpawner;
@@ -84,8 +86,8 @@ public class MobEggSpawnerBlocker extends JavaPlugin implements Listener {
         final EntityType type = cs.getSpawnedType();
 
         if (message != null && !message.isEmpty())
-            e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-
+//            e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+            e.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.translateAlternateColorCodes('&',message)));
         e.setCancelled(true);
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
